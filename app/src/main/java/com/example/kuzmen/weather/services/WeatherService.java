@@ -1,4 +1,4 @@
-package com.example.kuzmen.weather.factory;
+package com.example.kuzmen.weather.services;
 
 import com.example.kuzmen.weather.listeners.SetOnSearchWeatherListener;
 

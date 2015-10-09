@@ -1,4 +1,4 @@
-package com.example.kuzmen.weather.factory.impl;
+package com.example.kuzmen.weather.services.impl;
 
 import android.content.Context;
 
@@ -8,8 +8,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.kuzmen.weather.services.WeatherServiceApi;
 import com.example.kuzmen.weather.domain.WeatherInfo;
-import com.example.kuzmen.weather.factory.WeatherServiceApi;
 import com.example.kuzmen.weather.listeners.OnWeatherSearchListener;
 import com.example.kuzmen.weather.utils.Config;
 import com.example.kuzmen.weather.utils.JsonConverter;

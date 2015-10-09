@@ -10,7 +10,7 @@ import com.example.kuzmen.weather.R;
 import com.example.kuzmen.weather.utils.Config;
 
 /**
- *  WeatherDetailActivity содержит подробную информацию о погоде
+ *  WeatherDetailActivity contains detailed information about the weather.
  */
 public class WeatherDetailActivity extends Activity {
     private String main;

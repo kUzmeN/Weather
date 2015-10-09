@@ -2,8 +2,9 @@ package com.example.kuzmen.weather.factory.impl;
 
 import android.content.Context;
 
-import com.example.kuzmen.weather.factory.WeatherService;
 import com.example.kuzmen.weather.factory.WeatherServiceFactory;
+import com.example.kuzmen.weather.services.impl.ApiOpenweathermapImpl;
+import com.example.kuzmen.weather.services.WeatherService;
 
 public class WeatherServiceApiFactory implements WeatherServiceFactory {
     public static final String OPENWEATHERMAP = "openweathermap";

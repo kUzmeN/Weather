@@ -14,7 +14,7 @@ import com.example.kuzmen.weather.adapters.WeatherListAdapter;
 import com.example.kuzmen.weather.domain.City;
 import com.example.kuzmen.weather.domain.DayInfo;
 import com.example.kuzmen.weather.domain.WeatherInfo;
-import com.example.kuzmen.weather.factory.WeatherService;
+import com.example.kuzmen.weather.services.WeatherService;
 import com.example.kuzmen.weather.factory.WeatherServiceFactory;
 import com.example.kuzmen.weather.factory.impl.WeatherServiceApiFactory;
 import com.example.kuzmen.weather.listeners.OnWeatherSearchListener;
@@ -24,8 +24,8 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 /**
- * В ListWeatherActivity , мы получаем координаты с предыдущей MainActivity
- * отправляем запрос и получаем ответ с данными о погоде.
+ * In ListWeatherActivity, we get the coordinates of the previous MainActivity.
+ * Send requests and receive responses with data about the weather.
  */
 
 public class WeatherListActivity extends Activity implements OnWeatherSearchListener {

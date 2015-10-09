@@ -12,8 +12,7 @@ import com.example.kuzmen.weather.utils.validator.LatitudeValidator;
 import com.example.kuzmen.weather.utils.validator.LongitudeValidator;
 
 /**
- * Стартовая наша Activity , здесь мы получаем наши координаты и вызываем
- * другую WeatherListActivity передавая эти координаты.
+ * MainActivity which takes coordinates and starts the WeatherListActivity
  */
 public class MainActivity extends Activity {
     EditText edtLatitude;
@@ -29,6 +28,7 @@ public class MainActivity extends Activity {
         edtLatitude = (EditText) findViewById(R.id.edtLatitude);
         edtLongitude = (EditText) findViewById(R.id.edtLongitude);
 
+        // set coordinates for default location
         edtLatitude.setText("53.9");
         edtLongitude.setText("27.57");
 
