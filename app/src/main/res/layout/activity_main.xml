@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#040a0b">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffddbd"
+        android:id="@+id/tvMain"
+        android:text="@string/inputCoordinates"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="25dp"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_gravity="right">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffb9b9b9"
+            android:id="@+id/tvLatitude"
+            android:text="@string/inputLatitude"
+            android:textSize="19sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/edtLatitude"
+            android:background="#323232"
+            android:inputType="numberDecimal"
+            android:textColor="#ffddbd"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffb9b9b9"
+            android:id="@+id/tvLongitude"
+            android:text="@string/inputLongitude"
+            android:textSize="19sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            android:layout_gravity="center_horizontal|center_vertical"
+            />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:inputType="numberDecimal"
+            android:id="@+id/edtLongitude"
+            android:background="#323232"
+            android:textColor="#ffddbd"/>
+    </LinearLayout>
+    </TableLayout>
+
+    <Button
+        android:background="#ffddbd"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:id="@+id/searchBtn"
+        android:onClick="onClickSearch"/>
+
+
+</LinearLayout>
+

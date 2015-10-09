@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#ff000000"
+        android:gravity="center">
+        <TextView
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:id="@+id/tvWeatherListDate"
+            android:layout_height="30dp"
+            android:text="20.09"
+            android:textSize="19sp"
+            android:textColor="#ffddbd"
+            android:background="#ff000000"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:layout_width="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tvWeatherListWeeakDay"
+            android:layout_height="30dp"
+            android:text="Понедельник"
+            android:textSize="21sp"
+            android:textColor="#ffb9b9b9"
+            android:background="#ff000000"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:layout_width="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:id="@+id/tvWeatherListTempDay"
+            android:layout_height="30dp"
+            android:text="37°C"
+            android:textSize="19sp"
+            android:textColor="#ffddbd"
+            android:background="#ff000000"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:layout_width="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000000">
+        <TextView
+            android:layout_weight="10"
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:background="#ff000000"
+            android:enabled="false"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:background="#ffddbd"
+            android:enabled="false"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_weight="10"
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:background="#ff000000"
+            android:enabled="false"
+
+            >
+        </TextView>
+    </TableRow>
+
+
+</LinearLayout>

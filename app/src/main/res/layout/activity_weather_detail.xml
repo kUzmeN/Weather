@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView
+        android:id="@+id/tvDetailCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Минск"
+        android:textSize="37sp"
+        android:textColor="#ffddbd"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:background="#111111">
+    </TextView>
+    <TextView
+        android:id="@+id/tvDetailWeekDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Понедельник"
+        android:textSize="26sp"
+        android:textColor="#ffffffff"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:background="#111111"
+        android:gravity="left"
+        android:paddingLeft="10dp">
+    </TextView>
+    <TextView
+        android:id="@+id/tvDetailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дождь"
+        android:textSize="26sp"
+        android:textColor="#ffffffff"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:background="#111111"
+        android:gravity="right"
+        android:paddingRight="10dp">
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:background="#ff000000">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rain"
+            android:background="#ff000000"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDetailTempDay"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="37°"
+                android:textSize="70sp"
+                android:textColor="#fffff9f8"
+                android:background="#ff000000"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvDetailTempMax"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="39°"
+                    android:textColor="#fffffdfd"
+                    android:background="#ff000000"
+                    android:gravity="right"/>
+                <TextView
+                    android:id="@+id/tvDetailTempMin"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="/14°"
+                    android:textColor="#fffff9fb"
+                    android:background="#ff000000"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff000000">
+        <TextView
+            android:id="@+id/underline"
+            android:layout_height="2dp"
+            android:background="#ffddbd"
+            android:layout_gravity="center_vertical"
+            android:enabled="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="280dp">
+        </TextView>
+    </TableRow>
+
+    <LinearLayout
+        android:background="#ff000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/pressure"
+                android:textColor="#fffffdfd"
+                android:background="#ff000000"
+                android:gravity="right"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/humidity"
+                android:textColor="#fffffdfd"
+                android:background="#ff000000"
+                android:gravity="right"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/windSpeed"
+                android:textColor="#fffffdfd"
+                android:background="#ff000000"
+                android:gravity="right"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/tvDetailPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="761 гПа"
+                android:textColor="#ffddbd"
+                android:background="#ff000000"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/tvDetailHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="87 %"
+                android:textColor="#ffddbd"
+                android:background="#ff000000"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/tvDetailWindSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="2 м/c"
+                android:textColor="#ffddbd"
+                android:background="#ff000000"
+                android:gravity="left"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</TableLayout>
